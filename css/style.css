@@ -173,7 +173,18 @@ ul {
 .courses .course .rating-and-duration {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
+}
+.course .rating-and-duration .rating {
+    display: flex;
+    gap: 20px;
+}
+.course .rating-and-duration .rating .filled{
+    color: #FFC014;
+}
+.course .rating-and-duration .rating .empty{
+    color: #AEAEAE;
 }
 .course .rating-and-duration .duration {
     color: #FF4A60;
