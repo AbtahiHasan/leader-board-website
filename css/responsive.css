@@ -1,0 +1,106 @@
+ @media (max-width: 576px) {
+    .toggle-bar {
+        display: block;
+        color: var(--white);
+        font-size: 22px;
+    }
+    .navbar {
+        padding: 5px 15px;
+    }
+    .navbar .navlinks {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        transition: transform 0.4s linear, height 0.4s linear;
+        transform: translateX(-500px);
+        height: 0;
+        overflow: hidden;
+    }
+    .navbar .navlinks.active {
+        transform: translateX(0);
+        height: 300px;
+        width: 100%;
+        background-color: var(--primary-color);
+    }
+    
+    .navbar .navlinks ul{
+        flex-direction: column;
+    }
+    .navbar .navlinks ul li{
+        display: none;
+    }
+    .navbar .navlinks.active ul li{
+        display: block;
+    }
+    .navbar .navlinks.active ul li:nth-child(1){
+        animation: move1 .4s ease-out;
+        animation-delay: .2s;
+    }
+    .navbar .navlinks.active ul li:nth-child(2){
+        animation: move2 .4s ease-out;
+        animation-delay: .4s;
+    }
+    .navbar .navlinks.active ul li:nth-child(3){
+        animation: move3 .4s ease-out;
+        animation-delay: .6s;
+    }
+    @keyframes move1 {
+        0% {
+            transform: translateX(-1000px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    @keyframes move2 {
+        0% {
+            transform: translateX(-1000px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    @keyframes move3 {
+        0% {
+            transform: translateX(-1000px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    .navbar .navlinks ul li:hover{
+        background-color: var(--body-color);
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar .navlinks ul li:hover a{
+        color: var(--primary-color);
+    }
+    .top-players .container .players{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+    .top-players .player {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .top-blogs .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-blogs .blogs .blog{
+        flex-direction: column;
+    }    
+    .top-blogs .blogs .blog .thambnail img{
+        width: 100%;
+        height: auto;
+    }
+    .latest-courses .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+ }
