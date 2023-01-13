@@ -158,6 +158,9 @@ ul {
 }
 .courses .course {
     width: 100%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+    border-radius: 15px;
 }
 .courses .course .course-title{
     font-size: 18px;
@@ -191,6 +194,9 @@ ul {
     background-color: #FFE4E8;
     padding: 6px;
     border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .courses .course .author {
     color: #ED6B4F;
